@@ -32,7 +32,8 @@ public class asymEncyption {
 		byte[] bytes = cipher.doFinal(content.getBytes("utf-8"));
 		return StringUtils.ArraysByteToString(bytes);
 	}
-
+    
+	
 	public static String privateRsaDecyte(String content,PrivateKey privateKey) throws 
 	NoSuchAlgorithmException, 
 	NoSuchPaddingException, 
